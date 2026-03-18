@@ -1,0 +1,589 @@
+{
+  "member": [
+    {
+      "id": "dc5c",
+      "mb_id": "admin",
+      "mb_password": "1234",
+      "mb_email": "admin@admin.com",
+      "mb_name": "관리자",
+      "mb_phone": "01012345678"
+    },
+    {
+      "id": "4739",
+      "mb_id": "test",
+      "mb_password": "1234",
+      "mb_email": "sample@sample.com",
+      "mb_name": "홍길동",
+      "mb_phone": "01011112222"
+    }
+  ],
+  "cars": [
+    {
+      "id": "6ab1",
+      "carmade": "국산차",
+      "carbrand": "현대",
+      "carname": "더 뉴 캐스퍼",
+      "caryear": "2024-07-01",
+      "cartype": "경차",
+      "carfuel": "가솔린",
+      "carcolor": [
+        {
+          "name": "아틀라스 화이트",
+          "color": "#ffffff"
+        },
+        {
+          "name": "어비스 블랙 펄",
+          "color": "#000000"
+        },
+        {
+          "name": "비자림 카키 매트",
+          "color": "#32362f"
+        },
+        {
+          "name": "톰보이 카키",
+          "color": "#48493d"
+        },
+        {
+          "name": "시에나 오렌지 메탈릭",
+          "color": "#bf430d"
+        },
+        {
+          "name": "언블리치드 아이보리",
+          "color": "#c0beb2"
+        }
+      ],
+      "carmodel": [
+        {
+          "name": "스마트 (A/T)",
+          "price": "14930000"
+        },
+        {
+          "name": "디 에센셜 (A/T)",
+          "price": "17710000"
+        },
+        {
+          "name": "인스퍼레이션 (A/T)",
+          "price": "20170000"
+        }
+      ],
+      "caroption": [
+        {
+          "name": "비자림 카키 매트 외장컬러",
+          "price": "200000"
+        },
+        {
+          "name": "선루프",
+          "price": "400000"
+        },
+        {
+          "name": "인포테인먼트 내비 플러스Ⅰ",
+          "price": "1250000"
+        },
+        {
+          "name": "17인치 알로이 휠 패키지",
+          "price": "600000"
+        }
+      ],
+      "carimage": [
+        "car_casper_06.png",
+        "car_casper_05.png",
+        "car_casper_04.png",
+        "car_casper_03.png",
+        "car_casper_02.png",
+        "car_casper_01.png"
+      ]
+    },
+    {
+      "id": "a4f9",
+      "carmade": "수입차",
+      "carbrand": "BMW",
+      "carname": "New 1 Series",
+      "caryear": "2025-07-01",
+      "cartype": "준중형 ",
+      "carfuel": "가솔린",
+      "carcolor": [
+        {
+          "name": "알파인 화이트",
+          "color": "#ffffff"
+        },
+        {
+          "name": "블랙 사파이어 메탈릭",
+          "color": "#242424"
+        },
+        {
+          "name": "스카이스크래퍼 그레이 메탈릭",
+          "color": "#808281"
+        },
+        {
+          "name": "케이프 요크 그린 메탈릭",
+          "color": "#729c9d"
+        }
+      ],
+      "carmodel": [
+        {
+          "name": "120 (A/T)",
+          "price": "48400000"
+        },
+        {
+          "name": "120 M Sport (A/T)",
+          "price": "52800000"
+        },
+        {
+          "name": "M135 xDrive (A/T)",
+          "price": "61800000"
+        },
+        {
+          "name": "M135 xDrive Pro First Edition (A/T)",
+          "price": "64500000"
+        }
+      ],
+      "caroption": [
+        {
+          "name": "",
+          "price": ""
+        }
+      ],
+      "carimage": [
+        "New 1 Series04.png",
+        "New 1 Series03.png",
+        "New 1 Series02.png",
+        "New 1 Series01.png"
+      ]
+    },
+    {
+      "id": "1a41",
+      "carmade": "국산차",
+      "carbrand": "기아",
+      "carname": "모닝",
+      "caryear": "2023-07-01",
+      "cartype": "경차",
+      "carfuel": "가솔린",
+      "carcolor": [
+        {
+          "name": "클리어 화이트",
+          "color": "#ffffff"
+        },
+        {
+          "name": "오로라 블랙 펄",
+          "color": "#000000"
+        },
+        {
+          "name": "어드벤쳐러스 그린",
+          "color": "#46675d"
+        },
+        {
+          "name": "아스트로 그레이",
+          "color": "#7d7d7d"
+        },
+        {
+          "name": "시그널 레드",
+          "color": "#aa2c2c"
+        },
+        {
+          "name": "스파클링 실버",
+          "color": "#b3b3b3"
+        },
+        {
+          "name": "밀키 베이지",
+          "color": "#e7e1cf"
+        }
+      ],
+      "carmodel": [
+        {
+          "name": "트렌디 (A/T)",
+          "price": "13950000"
+        },
+        {
+          "name": "프레스티지 (A/T)",
+          "price": "15750000"
+        },
+        {
+          "name": "시그니처 (A/T)",
+          "price": "17750000"
+        },
+        {
+          "name": "GT-line (A/T)",
+          "price": "18700000"
+        }
+      ],
+      "caroption": [
+        {
+          "name": "8인치 내비게이션",
+          "price": "700000"
+        },
+        {
+          "name": "선루프",
+          "price": "400000"
+        },
+        {
+          "name": "[KGA] 스마트 패키지",
+          "price": "190000"
+        }
+      ],
+      "carimage": [
+        "모닝07.png",
+        "모닝06.png",
+        "모닝05.png",
+        "모닝04.png",
+        "모닝03.png",
+        "모닝02.png",
+        "모닝01.png"
+      ]
+    },
+    {
+      "id": "8a42",
+      "carmade": "국산차",
+      "carbrand": "현대",
+      "carname": "캐스퍼 일렉트릭",
+      "caryear": "2024-07-01",
+      "cartype": "소형",
+      "carfuel": "전기(배터리)",
+      "carcolor": [
+        {
+          "name": "아틀라스 화이트",
+          "color": "#ffffff"
+        },
+        {
+          "name": "톰보이 카키",
+          "color": "#333937"
+        },
+        {
+          "name": "시에나 오렌지 메탈릭",
+          "color": "#5a2711"
+        },
+        {
+          "name": "버터크림 옐로우 펄",
+          "color": "#c0bb9b"
+        },
+        {
+          "name": "언블리치드 아이보리",
+          "color": "#b4b0a4"
+        },
+        {
+          "name": "어비스 블랙 펄",
+          "color": "#0f0f11"
+        },
+        {
+          "name": "에어로 실버 매트",
+          "color": "#a7a8a9"
+        },
+        {
+          "name": "비자림 카키 매트",
+          "color": "#44453f"
+        },
+        {
+          "name": "더스크 블루 매트",
+          "color": "#192129"
+        }
+      ],
+      "carmodel": [
+        {
+          "name": "프리미엄 (A/T)",
+          "price": "28920000"
+        },
+        {
+          "name": "인스퍼레이션 (A/T)",
+          "price": "32550000"
+        },
+        {
+          "name": "크로스 (A/T)",
+          "price": "34630000"
+        }
+      ],
+      "caroption": [
+        {
+          "name": "에어로 실버 매트 외장컬러",
+          "price": "200000"
+        },
+        {
+          "name": "더스크 블루 매트 외장컬러",
+          "price": "200000"
+        },
+        {
+          "name": "아마조나스 그린 매트 외장컬러",
+          "price": "200000"
+        },
+        {
+          "name": "선루프",
+          "price": "390000"
+        },
+        {
+          "name": "투톤 컬러 루프",
+          "price": "390000"
+        },
+        {
+          "name": "현대 스마트센스Ⅱ",
+          "price": "990000"
+        },
+        {
+          "name": "컨비니언스 플러스",
+          "price": "590000"
+        },
+        {
+          "name": "컴포트",
+          "price": "590000"
+        },
+        {
+          "name": "하이패스",
+          "price": "200000"
+        },
+        {
+          "name": "파킹 어시스트",
+          "price": "690000"
+        },
+        {
+          "name": "[HGA] 밴 패키지",
+          "price": "390000"
+        }
+      ],
+      "carimage": [
+        "캐스퍼 일렉트릭09.png",
+        "캐스퍼 일렉트릭08.png",
+        "캐스퍼 일렉트릭07.png",
+        "캐스퍼 일렉트릭06.png",
+        "캐스퍼 일렉트릭05.png",
+        "캐스퍼 일렉트릭04.png",
+        "캐스퍼 일렉트릭03.png",
+        "캐스퍼 일렉트릭02.png",
+        "캐스퍼 일렉트릭01.png"
+      ]
+    },
+    {
+      "id": "60fd",
+      "carmade": "국산차",
+      "carbrand": "기아",
+      "carname": "K8",
+      "caryear": "2024-08-01",
+      "cartype": "준대형",
+      "carfuel": "LPG, 가솔린, 가솔린+전기",
+      "carcolor": [
+        {
+          "name": "인터스텔라 그레이",
+          "color": "#131416"
+        },
+        {
+          "name": "아이보리 실버",
+          "color": "#717275"
+        },
+        {
+          "name": "문스케이프 매트 그레이",
+          "color": "#7c7c7f"
+        },
+        {
+          "name": "선셋 베이지",
+          "color": "#5c5149"
+        },
+        {
+          "name": "스노우 화이트 펄",
+          "color": "#ffffff"
+        },
+        {
+          "name": "오로라 블랙 펄",
+          "color": "#070707"
+        }
+      ],
+      "carmodel": [
+        {
+          "name": "노블레스 라이트 (A/T)",
+          "price": "43060000"
+        },
+        {
+          "name": "베스트 셀렉션 (A/T)",
+          "price": "44400000"
+        },
+        {
+          "name": "노블레스 (A/T)",
+          "price": "46520000"
+        },
+        {
+          "name": "시그니처 (A/T)",
+          "price": "50170000"
+        },
+        {
+          "name": "시그니처 블랙 (A/T)",
+          "price": "51530000"
+        }
+      ],
+      "caroption": [
+        {
+          "name": "파노라마 선루프",
+          "price": "1070000"
+        },
+        {
+          "name": "헤드업 디스플레이",
+          "price": "830000"
+        },
+        {
+          "name": "메리디안 프리미엄 사운드",
+          "price": "1070000"
+        },
+        {
+          "name": "프리미엄",
+          "price": "680000"
+        },
+        {
+          "name": "[KGA] 블랙 루프 스킨",
+          "price": "360000"
+        },
+        {
+          "name": "[KGA] LED 도어 스팟 램프",
+          "price": "170000"
+        },
+        {
+          "name": "[KGA] 차량 보호 필름 I",
+          "price": "320000"
+        },
+        {
+          "name": "[KGA] 차량 보호 필름 II",
+          "price": "330000"
+        }
+      ],
+      "carimage": [
+        "k8_오로라 블랙 펄.png",
+        "k8_스노우 화이트 펄.png",
+        "k8_선셋 베이지.png",
+        "k8_문스케이프 매트 그레이.png",
+        "K8_아이보리 실버.png",
+        "K8_인터스텔라 그레이.png"
+      ]
+    }
+  ],
+  "quickconsult": [
+    {
+      "id": "a86c",
+      "carbrand": "현대",
+      "carname": "더 뉴 캐스퍼",
+      "carperiod": "36개월",
+      "username": "홍길동",
+      "userphone": "01012345678"
+    },
+    {
+      "id": "49bf",
+      "carbrand": "BMW",
+      "carname": "New 1 Series",
+      "carperiod": "48개월",
+      "username": "홍길동",
+      "userphone": "01012345678"
+    }
+  ],
+  "consult": [
+    {
+      "id": "d65c",
+      "carmade": "국산차",
+      "carbrand": "현대",
+      "carname": "더 뉴 캐스퍼",
+      "caryear": "2024-07-01",
+      "cartype": "경차",
+      "carfuel": "가솔린",
+      "carcolor": "아틀라스 화이트",
+      "carmodel": {
+        "name": "스마트 (A/T)",
+        "price": "14930000"
+      },
+      "caroption": [
+        {
+          "name": "비자림 카키 매트 외장컬러",
+          "price": "200000"
+        },
+        {
+          "name": "선루프",
+          "price": "400000"
+        }
+      ],
+      "usetype": "장기렌트",
+      "useperiod": "48개월",
+      "security": "10%",
+      "securitypay": "",
+      "advance": "30%",
+      "advancepay": "",
+      "Insuranceage": "만21세이상",
+      "mileage": "연 1만 km",
+      "totalprice": "15530000",
+      "username": "홍길동",
+      "userphone": "01012345678"
+    },
+    {
+      "id": "0ca4",
+      "carmade": "국산차",
+      "carbrand": "현대",
+      "carname": "캐스퍼 일렉트릭",
+      "caryear": "2024-07-01",
+      "cartype": "소형",
+      "carfuel": "전기(배터리)",
+      "carcolor": "아틀라스 화이트",
+      "carmodel": {
+        "name": "프리미엄 (A/T)",
+        "price": "28920000"
+      },
+      "caroption": [],
+      "usetype": "장기렌트",
+      "useperiod": "48개월",
+      "security": "10%",
+      "securitypay": "",
+      "advance": "30%",
+      "advancepay": "",
+      "Insuranceage": "만21세이상",
+      "mileage": "연 1만 km",
+      "totalprice": "28920000",
+      "username": "홍길동",
+      "userphone": "01011112222"
+    },
+    {
+      "id": "9ef6",
+      "carmade": "수입차",
+      "carbrand": "BMW",
+      "carname": "New 1 Series",
+      "caryear": "2025-07-01",
+      "cartype": "준중형 ",
+      "carfuel": "가솔린",
+      "carcolor": "케이프 요크 그린 메탈릭",
+      "carmodel": {
+        "name": "120 (A/T)",
+        "price": "48400000"
+      },
+      "caroption": [],
+      "usetype": "장기렌트",
+      "useperiod": "48개월",
+      "security": "10%",
+      "securitypay": "",
+      "advance": "30%",
+      "advancepay": "",
+      "Insuranceage": "만21세이상",
+      "mileage": "연 1만 km",
+      "totalprice": "48400000",
+      "username": "홍길동",
+      "userphone": "01012345678"
+    }
+  ],
+  "leaseconsult": [
+    {
+      "id": "5760",
+      "carbrand": "기아",
+      "carname": "K8",
+      "carmodel": {
+        "name": "노블레스 라이트 (A/T)",
+        "price": "43060000"
+      },
+      "monthprice": "897084",
+      "useperiod": "48개월",
+      "advance": "30%",
+      "username": "홍길동",
+      "userphone": "01011112222"
+    },
+    {
+      "id": "047d",
+      "carbrand": "BMW",
+      "carname": "New 1 Series",
+      "carmodel": {
+        "name": "120 (A/T)",
+        "price": "48400000"
+      },
+      "monthprice": "1008334",
+      "useperiod": "48개월",
+      "advance": "30%",
+      "username": "홍길동",
+      "userphone": "010111212222"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

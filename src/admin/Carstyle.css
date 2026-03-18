@@ -1,0 +1,55 @@
+.board{margin:50px auto 80px;max-width:1600px}
+#Board-write form{border-top:1px solid #111}
+#Board-write form .item{display:flex;border-bottom:1px solid #e1e1e1}
+#Board-write form label{display:flex;justify-content:center;align-items:center;padding:20px 0;width:170px;text-align:center;font-size:15px;font-weight:500;background-color:#f5f5f5}
+#Board-write form .input{padding:0 20px 0 12px;margin:10px;height:40px;border:1px solid #e1e1e1;border-radius:2px;font-size:15px;color:#777;font-family:'notokr-regular'}
+#Board-write form .input.image{padding:5px 0 5px 10px}
+#Board-write form .multi{position:relative;width:calc(100% - 170px)}
+#Board-write form .multi div{display:flex;align-items:center}
+#Board-write form .multi button{display:flex;justify-content:center;align-items:center;padding:5px;border:1px solid #e1e1e1;border-radius:5px}
+#Board-write form .multi .plusbtn{position:absolute;top:50%;right:10px;transform:translateY(-50%)}
+#Board-write form .submitbtn{display:flex;justify-content:center;align-items:center;margin:30px auto;width:180px;height:55px;border:none;border-radius:3px;font-size:15px;font-weight:500;color:#fff;background-color:var(--primary)}
+
+#Board-list{margin:50px auto 80px !important;max-width:1600px;margin:0 auto;overflow-x:auto}
+#Board-list .car-table{width:1600px;border-collapse:collapse;border-top:1px solid #111}
+#Board-list .car-table > thead th{height:60px;font-size:15px}
+#Board-list .car-table > tbody{border-top:1px solid #e1e1e1}
+#Board-list .car-table > tbody > tr{border-top:1px solid #e1e1e1}
+#Board-list .car-table > tbody > tr > td{padding:30px 0}
+#Board-list .car-table > tbody td{padding:10px 0;text-align:center;font-size:14px}
+#Board-list .car-image img{width:200px}
+#Board-list .car-color ul li+li{margin-top:10px}
+#Board-list .car-option{overflow-y:auto;display:block;padding-right:20px !important;max-height:260px}
+#Board-list .car-model th, #Board-list .car-option th{padding-bottom:10px}
+#Board-list .admin-btn button{margin:10px 0;width:80px;height:40px;border:none;border-radius:5px;font-weight:500}
+#Board-list .admin-btn .modeify-btn{color:#fff;background-color:var(--primary)}
+#Board-list .admin-btn .delete-btn{color:#ff567f;background-color:#ffd1dc}
+
+/* 반응형 [s] */
+@media (max-width:1300px){
+#Board-write.board{max-width:95%}
+}
+@media (max-width:1024px){
+#Board-write form label{padding:16px 0;width:160px;font-size:14px}
+#Board-write form .input{font-size:14px}
+#Board-write form .multi{width:calc(100% - 160px)}
+}
+@media (max-width:768px){
+#Board-write form label{padding:12px 0;width:130px;font-size:13px}
+#Board-write form .input{margin:10px 5px;width:160px;font-size:13px}
+#Board-write form .multi{width:calc(100% - 130px)}
+#Board-write form .multi button{padding:3px}
+}
+@media (max-width:540px){
+#Board-write form .input{width:200px}
+#Board-write form .multi div{position:relative;flex-direction:column;align-items:start;border-top:1px solid #e1e1e1}
+#Board-write form .multi > div:first-child{border-top:none}
+#Board-write form .multi .minusbtn{position:absolute;top:50%;left:220px;transform:translateY(-50%)}
+}
+@media (max-width:480px){
+#Board-write form label{width:110px}
+#Board-write form .input{width:150px}
+#Board-write form .multi{width:calc(100% - 110px)}
+#Board-write form .multi .minusbtn{left:170px}
+}
+/* 반응형 [e] */

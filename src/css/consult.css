@@ -1,0 +1,180 @@
+#Consult{margin:80px auto;max-width:1300px}
+#Consult .consult-header .txt{text-align:center}
+#Consult .consult-header .txt h2{font-size:35px}
+#Consult .consult-header .txt h2 span{font-weight:400}
+#Consult .consult-header .txt p{margin-top:30px;font-size:18px;color:#777}
+#Consult .consult-header .step{display:flex;align-items:center;margin-top:80px;border:1px solid #e1e1e1}
+#Consult .consult-header .step li{padding:30px 0;width:100%;text-align:center;border-right:1px solid #e1e1e1;font-size:18px;font-weight:500;color:#777}
+#Consult .consult-header .step li:last-child{border:none}
+#Consult .consult-header .step li.on{color:#fff;background-color:var(--primary)}
+#Consult .consult-header .step li span{margin-right:8px;padding:6px 14px;border:1px solid #e1e1e1;border-radius:20px;font-size:14px;font-weight:700}
+#Consult .consult-header .step li.on span{color:var(--primary);background-color:#fff}
+#Consult .car-made{margin-top:60px;display:flex}
+#Consult .car-made li{width:100%;text-align:center}
+#Consult .car-made li button{padding:20px 0;width:100%;border:1px solid #e1e1e1;font-size:18px;font-weight:600;background-color:transparent}
+#Consult .car-made li.on button{border:2px solid var(--primary);color:var(--primary)}
+#Consult .car-brand{margin-top:60px}
+#Consult .car-brand p{font-size:18px;font-weight:600}
+#Consult .select-brand{display:grid;grid-template-columns:repeat(6, 1fr);gap:30px;row-gap:60px;margin:50px 0}
+#Consult .select-brand li{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px;padding:30px 0;border:1px solid #e1e1e1;border-radius:10px;text-align:center;font-size:16px;font-weight:700;cursor:pointer}
+#Consult .select-brand li.on{border:2px solid var(--primary);color:var(--primary)}
+#Consult .select-car{display:grid;grid-template-columns:repeat(4, 1fr);gap:30px;row-gap:90px;margin:50px 0}
+#Consult .select-car .car-img{border-radius:10px;background-color:#f5f5f5}
+#Consult .select-car .car-img img{width:100%}
+#Consult .select-car .car-name{display:flex;justify-content:space-between;align-items:center;margin:30px 0;font-size:20px;font-weight:700}
+#Consult .select-car .car-price{display:flex;justify-content:space-between;align-items:center;font-size:17px;font-weight:500}
+#Consult .select-car .car-price span{color:#a2a2a2;font-weight:700}
+
+#Inquery{position:relative}
+#Inquery .container{display:flex;margin-top:60px}
+#Inquery .container .left, #Inquery .container .right{width:50%}
+#Inquery .container h3{padding:20px 25px;font-size:17px;color:#fff;background-color:var(--primary)}
+#Inquery .container h3 span:first-child{position:relative;padding-right:15px;margin-right:15px}
+#Inquery .container h3 span:first-child:after{content:'';position:absolute;top:50%;right:0px;transform:translateY(-50%);width:1px;height:14px;background-color:#e1e1e1}
+#Inquery .top.container{padding:30px;align-items:center;border:1px solid #e1e1e1}
+#Inquery .top img{width:100%}
+#Inquery .top h2{margin-bottom:30px;font-size:30px}
+#Inquery .top .specs{display:flex;align-items:center}
+#Inquery .top .specs li{padding:0 10px;border-right:1px solid #7a7a7a;font-size:16px;color:#7a7a7a}
+#Inquery .top .specs li:first-child{padding-left:0px}
+#Inquery .top .specs li:last-child{border:none}
+#Inquery .top .color{margin-top:30px;padding-top:30px;border-top:1px solid #e1e1e1}
+#Inquery .top .color div{display:flex;justify-content:space-between}
+#Inquery .top .color div span:first-child{font-size:21px;font-weight:600;color:#222}
+#Inquery .top .color div span:last-child{font-size:17px;font-weight:500;color:#777}
+#Inquery .top .color ul{overflow-x:auto;display:flex;gap:30px;margin-top:30px;padding-bottom:20px}
+#Inquery .top .color ul li{flex-shrink:0;width:75px;height:75px;border:1px solid #e1e1e1;border-radius:10px;overflow:hidden}
+#Inquery .top .color ul li.on{border:2px solid var(--primary)}
+#Inquery .top .color ul li label{display:block;width:100%;height:100%;cursor:pointer}
+#Inquery .top .color ul li input{display:none}
+#Inquery .middle, #Inquery .bottom{gap:15px}
+#Inquery .middle ul{overflow-y:auto;margin-top:30px;height:400px}
+#Inquery .middle ul li{border:1px solid #e1e1e1;border-radius:5px}
+#Inquery .middle ul li.on{border:2px solid var(--primary);color:var(--primary)}
+#Inquery .middle ul li + li{margin-top:20px}
+#Inquery .middle ul li label{display:flex;justify-content:space-between;padding:20px 25px;width:100%;height:100%;font-size:16px;font-weight:600;cursor:pointer}
+#Inquery .middle ul li input{display:none}
+#Inquery .bottom p{margin:25px 0;font-size:17px;font-weight:600}
+#Inquery .bottom .type-select{display:flex;gap:10px}
+#Inquery .bottom .type-select li{width:100%;text-align:center}
+#Inquery .bottom .type-select li label{display:block;padding:22px 0;width:100%;border:1px solid #e1e1e1;border-radius:5px;font-size:16px;font-weight:600;cursor:pointer}
+#Inquery .bottom .type-select li.on label{border:2px solid var(--primary);color:var(--primary)}
+#Inquery .bottom .type-select li input{display:none}
+#Inquery .bottom .pay-input{padding:22px 20px;width:100%;font-size:16px;border:1px solid #e1e1e1}
+#Inquery .bottom .right > div{margin:30px}
+#Inquery .bottom .summary{padding-top:25px;padding-bottom:25px;margin-bottom:50px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1}
+#Inquery .bottom .summary li{display:flex;justify-content:space-between;font-size:16px}
+#Inquery .bottom .summary li + li{margin-top:20px}
+#Inquery .bottom .summary li span:first-child{color:#777;font-weight:500}
+#Inquery .bottom .summary li span:last-child{font-weight:600}
+#Inquery .bottom .basic-price{display:flex;justify-content:space-between;margin-bottom:50px;padding-top:25px;border-top:1px solid #e1e1e1;font-size:17px}
+#Inquery .bottom .basic-price span:first-child{color:#777;font-weight:500}
+#Inquery .bottom .basic-price span:last-child{font-weight:600}
+#Inquery .bottom .option{padding-top:25px;padding-bottom:25px;margin-bottom:30px;border-top:1px solid #e1e1e1}
+#Inquery .bottom .option li{display:flex;justify-content:space-between;font-size:17px}
+#Inquery .bottom .option li + li{margin-top:15px}
+#Inquery .bottom .option li:first-child{display:block;color:#777}
+#Inquery .bottom .option li:first-child span{font-weight:400 !important}
+#Inquery .bottom .option li span:first-child{color:#777}
+#Inquery .bottom .option li span:last-child{font-weight:600}
+#Inquery .bottom .total-price{display:flex;justify-content:space-between;padding-top:50px;border-top:1px solid #e1e1e1}
+#Inquery .bottom .total-price span:first-child{font-size:18px;font-weight:600}
+#Inquery .bottom .total-price span:last-child{font-size:28px;font-weight:700}
+#Inquery .bottom .info-btn{display:flex;justify-content:center;align-items:center;margin-top:60px;width:100%;height:70px;border:none;border-radius:5px;font-size:19px;font-weight:600;color:#fff;background-color:var(--primary)}
+.userinfo-wrap{position:fixed;z-index:1;top:0px;right:0px;width:100%;height:100%;background:rgb(0, 0, 0, 0.5)}
+.userinfo{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);padding:40px 30px;width:500px;border-radius:10px;background-color:#fff}
+.userinfo h3{font-size:22px;text-align:center}
+.userinfo .close-btn{position:absolute;top:20px;right:20px;border:none;background-color:transparent}
+.userinfo .user-input{display:flex;flex-direction:column;margin-top:40px}
+.userinfo .user-input input{padding:15px;margin:8px 0;border:1px solid #e1e1e1;border-radius:3px;font-size:14px}
+.userinfo .submit-btn{margin-top:30px;width:100%;height:60px;border:none;border-radius:3px;color:#fff;background-color:var(--primary);font-size:16px;font-weight:600}
+
+/* 반응형 [s] */
+@media (max-width:1300px){
+#Consult{max-width:95%}
+}
+@media (max-width:1024px){
+#Consult{margin:70px auto}
+#Consult .consult-header .txt h2{font-size:32px}
+#Consult .consult-header .txt p{margin-top:22px;font-size:17px}
+#Consult .consult-header .step{margin-top:60px}
+#Consult .consult-header .step li{padding:25px 0;font-size:16px}
+#Consult .consult-header .step li span{padding:5px 11px}
+#Consult .car-made{margin-top:50px}
+#Consult .car-made li button{font-size:16px}
+#Consult .car-brand p{font-size:16px}
+#Consult .select-brand{gap:25px;grid-template-columns:repeat(5, 1fr)}
+#Consult .select-brand li{gap:25px;padding:25px 0;font-size:16px}
+#Consult .select-car{gap:25px;grid-template-columns:repeat(3, 1fr)}
+#Consult .select-car .car-name{font-size:17px}
+#Consult .select-car .car-price{font-size:15px}
+#Inquery .top h2{margin-bottom:25px;font-size:25px}
+#Inquery .top .specs li{font-size:15px}
+#Inquery .top .color div span:first-child{font-size:18px}
+#Inquery .top .color div span:last-child{font-size:15px}
+#Inquery .top .color ul{gap:20px}
+#Inquery .top .color ul li{width:65px;height:65px}
+#Inquery .container h3{font-size:16px}
+#Inquery .middle ul{height:260px}
+#Inquery .middle ul li label{font-size:15px}
+#Inquery .bottom p{font-size:16px}
+#Inquery .bottom .type-select li label{padding:16px 0;font-size:15px}
+#Inquery .bottom .summary li{font-size:15px}
+#Inquery .bottom .basic-price{font-size:16px}
+#Inquery .bottom .option li{font-size:16px}
+#Inquery .bottom .total-price span:first-child{font-size:17px}
+#Inquery .bottom .total-price span:last-child{font-size:24px}
+#Inquery .bottom .info-btn{height:60px;font-size:17px}
+#Inquery .bottom .pay-input{padding:16px 14px}
+}
+@media (max-width:768px){
+#Consult .consult-header .txt h2{font-size:28px}
+#Consult .consult-header .txt p{margin-top:18px;font-size:16px}
+#Consult .consult-header .step{flex-direction:column;margin-top:50px}
+#Consult .consult-header .step li{padding:20px 0;font-size:15px;border-bottom:1px solid #e1e1e1;border-right:none}
+#Consult .consult-header .step li span{padding:4px 8px;font-size:13px}
+#Consult .car-made{margin-top:40px}
+#Consult .car-made li button{padding:16px 0;font-size:15px}
+#Consult .car-brand p{font-size:16px;text-align:center}
+#Consult .select-brand{gap:20px;grid-template-columns:repeat(4, 1fr)}
+#Consult .select-car{gap:20px;grid-template-columns:repeat(2, 1fr)}
+#Inquery .top.container{flex-direction:column}
+#Inquery .container{flex-direction:column;margin-top:50px;gap:60px}
+#Inquery .container .left, #Inquery .container .right{width:100%}
+#Inquery .container h3{padding:18px;font-size:15px}
+#Inquery .middle ul{margin-top:20px}
+#Inquery .middle ul li label{padding:18px;font-size:14px}
+#Inquery .bottom p{margin:20px 0}
+#Inquery .bottom .right > div{margin:20px 2.5%}
+}
+@media (max-width:480px){
+#Consult{margin:60px auto}
+#Consult .consult-header .txt h2{font-size:25px}
+#Consult .consult-header .txt p{margin-top:15px;font-size:15px}
+#Consult .consult-header .step{margin-top:40px}
+#Consult .consult-header .step li{font-size:14px}
+#Consult .car-made{margin-top:30px}
+#Consult .car-made li button{padding:14px 0;font-size:14px}
+#Consult .car-brand p{font-size:15px}
+#Consult .select-brand{gap:15px;grid-template-columns:repeat(3, 1fr)}
+#Consult .select-car{gap:70px;grid-template-columns:repeat(1, 1fr)}
+#Inquery .top.container{padding:20px}
+#Inquery .top h2{margin-bottom:20px;font-size:22px}
+#Inquery .top .specs li{font-size:14px}
+#Inquery .top .color{margin-top:20px;padding-top:20px}
+#Inquery .top .color div span:first-child{font-size:16px}
+#Inquery .top .color div span:last-child{font-size:14px}
+#Inquery .top .color ul{gap:15px}
+#Inquery .top .color ul li{width:55px;height:55px}
+#Inquery .container h3{padding:16px;font-size:14px}
+#Inquery .middle ul li label{padding:16px;font-size:13px}
+#Inquery .bottom .type-select{gap:6px}
+#Inquery .bottom .type-select li label{padding:14px 0;font-size:14px}
+#Inquery .bottom .summary li{font-size:14px}
+#Inquery .bottom .basic-price{font-size:15px}
+#Inquery .bottom .option li{font-size:15px}
+#Inquery .bottom .total-price span:first-child{font-size:16px}
+#Inquery .bottom .total-price span:last-child{font-size:21px}
+#Inquery .bottom .info-btn{height:55px;font-size:16px}
+}
+/* 반응형 [e] */

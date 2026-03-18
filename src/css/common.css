@@ -1,0 +1,60 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');/* regular-400, medium-500, semibold-600, bold-700 */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 기본 설정 */
+:root{--primary:#012561;--prefont:'Pretendard';--pop:'Poppins'}
+body{background:#fff;font-size:0.81em;font-family:var(--prefont)}
+h1, h2, h3, h4, h5, h6, input, button, textarea, select{font-family:'Pretendard'}
+a{cursor:pointer}
+.pl{white-space:pre-line;word-break:keep-all}
+
+/* Header [s] */
+#top-menu{position:relative;display:flex;justify-content:space-between;align-items:center;margin:0 auto;max-width:1300px;height:90px}
+#top-menu .logo{font-size:24px;font-weight:700}
+#top-menu .search-car{display:flex;align-items:center;gap:10px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);padding:0 30px;width:420px;height:50px;border:1px solid var(--primary);border-radius:25px}
+#top-menu .search-car .select-made{border:none;font-size:15px;font-weight:600;color:var(--primary)}
+#top-menu .search-car .select-car{padding:8px 10px;width:280px;border:none}
+#top-menu .search-car button{margin-left:auto;border:none;background-color:transparent}
+#top-menu .user{display:flex;align-items:center;gap:10px}
+#top-menu .user li{display:flex;align-items:center;font-size:15px;font-weight:500}
+#top-menu .user button{border:none;font-weight:500;background-color:transparent}
+#top-nav{padding:20px 0;color:#fff;background-color:var(--primary)}
+#top-nav ul{display:flex;align-items:center;gap:30px;margin:auto;max-width:1300px}
+#top-nav ul li a{font-size:17px;font-weight:700;color:#fff}
+/* Header [e] */
+
+/* Footer [s] */
+footer{padding:80px 0;color:#fff;background-color:#060f20}
+footer > div{margin:auto;max-width:1400px}
+footer > div .logo{margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid #515763;font-size:30px;font-weight:700}
+footer > div .address{font-size:16px}
+/* Footer [e] */
+
+/* 반응형 [s] */
+@media (max-width:1300px){
+#top-menu, #top-nav ul, footer > div{max-width:95%}
+}
+@media (max-width:1024px){
+#top-menu .search-car{padding:0 20px;max-width:300px}
+footer{padding:60px 0}
+footer > div .logo{margin-bottom:25px;padding-bottom:25px;font-size:25px}
+footer > div .address{font-size:15px}
+}
+@media (max-width:768px){
+#top-menu{height:60px}
+#top-menu .search-car{display:none}
+#top-nav ul{gap:20px}
+#top-nav ul li a{font-size:15px}
+footer > div .logo{margin-bottom:20px;padding-bottom:20px;text-align:center;font-size:23px}
+footer > div .address{text-align:center;font-size:14px}
+}
+@media (max-width:480px){
+#top-menu .logo{font-size:22px}
+#top-menu .user a{font-size:14px}
+#top-nav{padding:18px 0}
+#top-nav ul{gap:10px}
+#top-nav ul li a{font-size:14px}
+footer > div .logo{font-size:21px}
+footer > div .address{font-size:13px}
+}
+/* 반응형 [e] */

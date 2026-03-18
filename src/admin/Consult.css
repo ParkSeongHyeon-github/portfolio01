@@ -1,0 +1,48 @@
+.notice{margin-bottom:20px;font-size:15px;font-weight:600;color:#e53935}
+#ConsultList{ max-width:1300px;margin:0 auto;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:50px auto 80px;max-width:1300px}
+#ConsultList > table{min-width:1300px;border-collapse:collapse;border-top:1px solid #111}
+#ConsultList .top th{height:60px;font-size:16px}
+/* easyconsult 개별 css [s] */
+#ConsultList .top.easy th:nth-child(4), #ConsultList .bottom.easy td:nth-child(4){width:350px}
+#ConsultList .top.easy th:nth-child(5), #ConsultList .bottom.easy td:nth-child(5){width:350px}
+/* easyconsult 개별 css [e] */
+/* leasecounlt 개별 css [s] */
+#ConsultList .top.lease th:nth-child(3), #ConsultList .bottom.lease td:nth-child(3){width:450px}
+/* leasecounlt 개별 css [e] */
+#ConsultList .bottom{border-top:1px solid #e1e1e1}
+#ConsultList .bottom td{text-align:center}
+#ConsultList .bottom > tr{border-top:1px solid #e1e1e1}
+#ConsultList .bottom > tr > td{padding:20px 0;font-size:14px;font-weight:500}
+#ConsultList .bottom thead th{max-width:200px}
+#ConsultList .model-table{width:100%;table-layout:fixed}
+#ConsultList .model-table td{padding:10px 0;word-break:keep-all}
+
+#ConsultView{margin:50px auto 80px;max-width:1300px}
+#ConsultView .title{padding:15px 20px;border-top:1px solid #111;border-bottom:1px solid #e1e1e1;font-size:18px;font-weight:600;background-color:#f5f5f5}
+#ConsultView .user{display:flex;justify-content:space-between;padding:15px 20px;border-bottom:1px solid #e1e1e1;font-size:14px;color:#777;}
+#ConsultView .user span{padding-right:10px;margin-right:10px;border-right:1px solid #e1e1e1}
+#ConsultView .info{padding:15px 20px;border-bottom:1px solid #e1e1e1;font-size:15px}
+#ConsultView .info > li{display:flex;align-items:center;gap:10px}
+#ConsultView .info > li + li{margin-top:10px}
+#ConsultView .info > li > span{min-width:80px;height:30px;line-height:30px;text-align:center;font-size:14px;border:1px solid #e1e1e1;border-radius:20px;background-color:#f5f5f5}
+#ConsultView .info .car-model{display:flex;align-items:center;gap:10px}
+#ConsultView .info .car-option{display:flex;flex-direction:column;gap:10px}
+#ConsultView .info .car-option li{display:flex;align-items:center;gap:10px;word-break:keep-all}
+#ConsultView .btn{display:flex;align-items:center;gap:10px;margin-top:30px}
+#ConsultView .btn a, #ConsultView .btn button{width:90px;height:40px;line-height:40px;text-align:center;font-size:14px;border:none;border-radius:4px;color:#fff;background-color:var(--primary);cursor:pointer}
+
+@media (max-width:768px){
+#ConsultList .top th{font-size:15px}
+#ConsultList .bottom > tr > td{padding:15px 0;font-size:14px}
+#ConsultView .title{font-size:17px}
+#ConsultView .info{padding:12px 16px;font-size:14px}
+#ConsultView .info > li > span{font-size:13px}
+#ConsultView .btn{margin-left:2.5%}
+}
+@media (max-width:480px){
+#ConsultList .top th{font-size:14px}
+#ConsultList .bottom > tr > td{padding:12px 0;font-size:13px}
+#ConsultView .title{font-size:16px}
+#ConsultView .info{padding:12px 14px;font-size:13px}
+#ConsultView .info > li > span{font-size:12px}
+}
