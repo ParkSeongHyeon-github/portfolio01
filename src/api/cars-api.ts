@@ -1,7 +1,7 @@
 import type {CarWriteData} from '../types/cars';
 
 export const Insert = async(data : CarWriteData) => {
-    const res = await fetch("http://localhost:4000/cars", {
+    const res = await fetch("https://portfolio01-zuj0.onrender.com/cars", {
         method :'post',
         body : JSON.stringify(data)
     })
@@ -14,7 +14,7 @@ export const Insert = async(data : CarWriteData) => {
 }
 
 export const Update = async(data : CarWriteData, id : string) => {
-    const res = await fetch(`http://localhost:4000/cars/${id}`, {
+    const res = await fetch(`https://portfolio01-zuj0.onrender.com/cars/${id}`, {
         method :'put',
         body : JSON.stringify(data)
     })
@@ -27,7 +27,7 @@ export const Update = async(data : CarWriteData, id : string) => {
 }
 
 export const Select = async(limit?: number) => {
-    let url = "http://localhost:4000/cars";
+    let url = "https://portfolio01-zuj0.onrender.com/cars";
 
     if (limit) {
         url += `?_page=1&_per_page=${limit}`;
@@ -40,7 +40,7 @@ export const Select = async(limit?: number) => {
 }
 
 export const SelectOne = async(id : string) => {
-    const res = await fetch(`http://localhost:4000/cars/${id}`);
+    const res = await fetch(`https://portfolio01-zuj0.onrender.com/cars/${id}`);
     if(!res.ok){
         throw new Error('서버 접속 실패')
     }
@@ -50,7 +50,7 @@ export const SelectOne = async(id : string) => {
 
 export const Delete = async(id : string) => {
     const res = await fetch(`
-        http://localhost:4000/cars/${id}`, {
+        https://portfolio01-zuj0.onrender.com/cars/${id}`, {
         method: 'delete'
     })
 

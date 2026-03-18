@@ -1,7 +1,7 @@
 import type {MemberData} from '../types/member';
 
 export const Insert = async(data : MemberData) => {
-    const res = await fetch("http://localhost:4000/member", {
+    const res = await fetch("https://portfolio01-zuj0.onrender.com/member", {
         method : 'post',
         headers : {'content-type' : 'application/json'},
         body : JSON.stringify(data)
@@ -15,7 +15,7 @@ export const Insert = async(data : MemberData) => {
 }
 
 export const SelectLogin = async(id : string) => {
-    const res = await fetch(`http://localhost:4000/member?mb_id=${id}`);
+    const res = await fetch(`https://portfolio01-zuj0.onrender.com/member?mb_id=${id}`);
     if(!res.ok){
         throw new Error('서버 접속 실패');
     }

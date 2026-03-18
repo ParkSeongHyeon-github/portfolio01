@@ -5,7 +5,7 @@ import type { LeaseCarWriteData } from '../types/consult';
 type ApiData = QuickConsultWriteData | CarInqueryWriteData | LeaseCarWriteData;
 
 export const Insert = async<T extends ApiData>(url: string, data: T) => {
-    const res = await fetch(`http://localhost:4000/${url}`, {
+    const res = await fetch(`https://portfolio01-zuj0.onrender.com/${url}`, {
         method: 'post',
         headers: {
             'content-type': 'application/json'
@@ -21,7 +21,7 @@ export const Insert = async<T extends ApiData>(url: string, data: T) => {
 }
 
 export const Select = async(url : string) => {
-    const res = await fetch(`http://localhost:4000/${url}`);
+    const res = await fetch(`https://portfolio01-zuj0.onrender.com/${url}`);
 
     if(!res.ok){
         throw new Error('서버 접속 실패');
@@ -31,7 +31,7 @@ export const Select = async(url : string) => {
 }
 
 export const SelectOne = async(url : string, id : string) => {
-    const res = await fetch(`http://localhost:4000/${url}/${id}`);
+    const res = await fetch(`https://portfolio01-zuj0.onrender.com/${url}/${id}`);
 
     if(!res.ok){
         throw new Error('서버 접속 실패');
