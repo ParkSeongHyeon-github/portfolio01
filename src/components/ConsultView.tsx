@@ -8,10 +8,9 @@ interface ConsultProps {
     data : CarInquery | LeaseCar | QuickConsult,
     info : string[],
     infokey : (keyof CarInquery)[] | (keyof LeaseCar)[] | (keyof QuickConsult)[],
-    consultId : string
 }
 
-const ConsultView = ({type, data, info, infokey, consultId } : ConsultProps) => {
+const ConsultView = ({type, data, info, infokey } : ConsultProps) => {
     return(
         <div id="ConsultView">
             <div className="title">{data['carname']} 상담 신청</div>

@@ -6,7 +6,7 @@ import { Select } from '../api/cars-api';
 import "../css/consult.css";
 
 const ConsultCarSelect = () => {
-    const [searchBrand, setSearchBrand] = useSearchParams();
+    const [searchBrand] = useSearchParams();
     const selectMade = searchBrand.get('made');
     const selectBrand = searchBrand.get('brand');
 

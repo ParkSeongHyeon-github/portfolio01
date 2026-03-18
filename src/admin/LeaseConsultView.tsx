@@ -15,7 +15,7 @@ const LeaseConsultView = () => {
     }
 
     return(
-        <ConsultView type={'lease'} data={leaseData} info={infodata} infokey={infokey} consultId={consultid}/>
+        <ConsultView type={'lease'} data={leaseData} info={infodata} infokey={infokey}/>
     )
 }
 

@@ -14,7 +14,7 @@ const QuickConsultView = () => {
         return <div>loading...</div>
     }
     return(
-        <ConsultView type={'quick'} data={quickData} info={infodata} infokey={infokey} consultId={consultid}/>
+        <ConsultView type={'quick'} data={quickData} info={infodata} infokey={infokey}/>
 
     )
 }
