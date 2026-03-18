@@ -28,7 +28,7 @@ const Section01 = () => {
         load()
     }, [])
 
-    const filterData = leaseData.find(val => val.carname === curCar);
+    const filterData = leaseData.find(val => val.carname === curCar) ?? null;
 
     return(
         <div id="Section01">
