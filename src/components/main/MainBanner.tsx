@@ -31,8 +31,8 @@ const MainBanner = () => {
     useEffect(() => {
         const load = async() => {
             try{
-                const result = await Select();
-                const brandAndModel = result.map((car : CarData) => ({
+                const result = await Select({});
+                const brandAndModel = result.data.map((car : CarData) => ({
                     carbrand : car.carbrand,
                     carname : car.carname
                 }))

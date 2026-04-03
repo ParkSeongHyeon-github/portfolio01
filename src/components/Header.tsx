@@ -36,8 +36,8 @@ const Header = ({ loginUser, setLoginUser} : HeaderProps) => {
     useEffect(() => {
         const load = async () => {
             try{
-                const result = await Select();
-                setCarData(result);
+                const result = await Select({});
+                setCarData(result.data);
             }catch{
                 alert('차량 데이터를 불러오지 못했습니다.');
             }

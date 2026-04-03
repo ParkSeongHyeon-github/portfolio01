@@ -11,7 +11,7 @@ import "./Carstyle.css";
 
 registerLocale('ko', ko);
 
-const CarWrite = () => {
+const CarWrite = ({loginUser} : {loginUser : string | null}) => {
     const {carid} = useParams();
     const nav = useNavigate();
     const [carYear, setCarYear] = useState<Date | null>(null);
@@ -109,6 +109,11 @@ const CarWrite = () => {
         }
     }, [carid])
 
+    useEffect(() => {
+        if(!loginUser || loginUser !== '관리자'){
+            nav("/");
+        }
+    }, [])
     return(
         <div id="Board-write" className="board">
             <form onSubmit={Upload}>

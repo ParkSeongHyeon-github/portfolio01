@@ -29,25 +29,23 @@ function App() {
     }
   }, [])
 
-  
-
   return (
     <BrowserRouter>
       <Header loginUser={loginUser} setLoginUser={setLoginUser}/>
       <main>
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="/admin/cars/write" element={<CarWrite />}></Route>
-        <Route path="/admin/cars/write/:carid" element={<CarWrite />}></Route>
-        <Route path="/admin/cars/list" element={<CarList />}></Route>
+        <Route path="/admin/cars/write" element={<CarWrite loginUser={loginUser} />}></Route>
+        <Route path="/admin/cars/write/:carid" element={<CarWrite loginUser={loginUser} />}></Route>
+        <Route path="/admin/cars/list" element={<CarList loginUser={loginUser} />}></Route>
 
-        <Route path="/admin/consult/lease/list" element={<LeaseConsultList />}></Route>
-        <Route path="/admin/consult/quick/list" element={<QuickConsultList />}></Route>
-        <Route path="/admin/consult/easy/list" element={<EasyConsultList />}></Route>
+        <Route path="/admin/consult/lease/list" element={<LeaseConsultList loginUser={loginUser} />}></Route>
+        <Route path="/admin/consult/quick/list" element={<QuickConsultList loginUser={loginUser} />}></Route>
+        <Route path="/admin/consult/easy/list" element={<EasyConsultList loginUser={loginUser} />}></Route>
 
-        <Route path="/admin/consult/easy/view/:consultid" element={<EasyConsultView />}></Route>
-        <Route path="/admin/consult/lease/view/:consultid" element={<LeaseConsultView />}></Route>
-        <Route path="/admin/consult/quick/view/:consultid" element={<QuickConsultView />}></Route>
+        <Route path="/admin/consult/easy/view/:consultid" element={<EasyConsultView loginUser={loginUser} />}></Route>
+        <Route path="/admin/consult/lease/view/:consultid" element={<LeaseConsultView loginUser={loginUser} />}></Route>
+        <Route path="/admin/consult/quick/view/:consultid" element={<QuickConsultView loginUser={loginUser} />}></Route>
 
         <Route path="/consult/carselect" element={<ConsultCarSelect />}></Route>
         <Route path="/consult/carselect/:carid" element={<ConsultCarInquery />}></Route>

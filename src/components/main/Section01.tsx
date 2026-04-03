@@ -19,8 +19,8 @@ const Section01 = () => {
     useEffect(() => {
         const load = async() => {
             try{
-                const result = await Select(8);
-                setLeaseData(result);
+                const result = await Select({limit : 8});
+                setLeaseData(result.data);
             }catch{
                 alert('올바른 접근이 아닙니다.');
             }

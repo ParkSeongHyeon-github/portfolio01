@@ -31,8 +31,8 @@ const ConsultCarSelect = () => {
     useEffect(() => {
         const load = async() => {
             try{
-                const result = await Select();
-                setCarData(result);
+                const result = await Select({});
+                setCarData(result.data);
             }catch{
                 alert('올바른 접근이 아닙니다.');
             }

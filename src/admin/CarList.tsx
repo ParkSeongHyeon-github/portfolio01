@@ -1,11 +1,20 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Select, Delete } from '../api/cars-api';
+import { Search, RefreshCw } from 'react-feather';
 import type { CarData } from '../types/cars';
 import "./Carstyle.css";
 
-const CarList = () => {
+const CarList = ({loginUser} : {loginUser : string | null}) => {
+    const nav = useNavigate();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const curPage = Number(searchParams.get("page")) || 1;
+    const curSubject = searchParams.get("subject") || '';
+    const limit = 5;
+
     const [carList, setCarList] = useState<CarData[]>([]);
+    const [totalCount, setTotalCount] = useState<number>(1); 
+    const [searchSubject, setSearchSubject] = useState<string>(curSubject);
 
     const DeleteCar = async(id : string) => {
         try{
@@ -19,20 +28,64 @@ const CarList = () => {
         }
     }
 
+    const pageGroup = Math.ceil(curPage / 10);
+    const startPage = (pageGroup - 1) * 10 + 1;
+    const endPage = Math.min(startPage + 9, totalCount);
+
+    const ChangePage = (page : string) => {
+        setSearchParams({page : page});
+    }
+
+    const SearchSubject = () => {
+        setSearchParams({subject : searchSubject, page : "1"});
+    }
+
+    const Refresh = () => {
+        setSearchParams({});
+        setSearchSubject('');
+    }
+
     useEffect(() => {
         const load = async() => {
             try{
-                const result = await Select();
-                setCarList(result);
+                const result = await Select({page : curPage, limit : limit, carname : searchSubject});
+                setCarList(result.data);
+                setTotalCount(result.totalCount / limit);
             }catch{
                 alert('올바른 접근이 아닙니다.');
             }
         }
         load()
+    }, [searchParams])
+
+    const pagingArr = Array.from({length : (endPage - startPage + 1)}, (_, i) => startPage + i);
+
+    const prevGroup = () => {
+        if(startPage > 1){
+            ChangePage(String(startPage - 1));
+        }
+    }
+    const nextGroup = () => {
+        if (endPage < totalCount) {
+            ChangePage(String(endPage + 1));
+        }
+    };
+
+    useEffect(() => {
+        if(!loginUser || loginUser !== '관리자'){
+            nav("/");
+        }
     }, [])
     
     return(
         <div id="Board-list" className="board">
+            <div className="search"> 
+                <div className="search-wrap">
+                    <input type="text" value={searchSubject} placeholder='차량명을 입력해 주세요.' onChange={(e : React.ChangeEvent<HTMLInputElement>) => setSearchSubject(e.target.value)}  onKeyDown={(e) => {if (e.key === 'Enter') {SearchSubject();}}}/>
+                    <button onClick={SearchSubject}><Search size={20}/></button>
+                </div>
+                <button className="refresh-btn" onClick={Refresh}><RefreshCw size={20}/></button>
+            </div>
             <table className="car-table">
                 <thead>
                     <tr>
@@ -118,6 +171,17 @@ const CarList = () => {
                     })}
                 </tbody>
             </table>
+                <div className="pagination">
+                {startPage > 1 && (
+                    <button onClick={prevGroup}>이전</button>
+                )}
+                {pagingArr.map((val) => (
+                    <button key={val} type="button" onClick={() => ChangePage(String(val))} className={val === curPage ? 'active' : ''}>{val}</button>
+                ))}
+                {endPage < totalCount && (
+                    <button onClick={nextGroup}>다음</button>
+                )}
+            </div>
         </div>
     )
 }

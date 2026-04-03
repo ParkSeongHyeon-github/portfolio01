@@ -11,12 +11,20 @@ export const Insert = async(data : CarWriteData) => {
     return true;
 }
 
-export const Select = async(limit?: number) => {
-    let url = `${BASE_URL}/cars`;
-    if(limit) url += `?_page=1&_per_page=${limit}`;
+export const Select = async({page = 1, limit = 15, carname = ''}) => {
+    let url = `${BASE_URL}/cars?_page=${page}&_limit=${limit}`;
+    if(carname){
+        url += `&carname_like=${carname}`
+    }
     const res = await fetch(url);
     if(!res.ok) throw new Error('서버 접속 실패');
-    return await res.json();
+    const totalCount = res.headers.get('X-Total-Count');
+    console.log(url);
+    const data = await res.json();
+    return {
+        data,
+        totalCount: Number(totalCount)
+    };
 }
 
 export const SelectOne = async(id : string) => {

@@ -25,6 +25,16 @@
 #Board-list .admin-btn .modeify-btn{color:#fff;background-color:var(--primary)}
 #Board-list .admin-btn .delete-btn{color:#ff567f;background-color:#ffd1dc}
 
+#Board-list .pagination{display:flex;justify-content:center;gap:8px;margin:30px 0}
+#Board-list .pagination button{width:28px;height:28px;border:1px solid #e1e1e1;border-radius:3px;background-color:#f5f5f5}
+#Board-list .pagination button.active {font-weight:bold;background:#000;color:#fff}
+
+.search{display:flex;align-items:center;gap:8px;margin:0 0 30px auto;width:max-content}
+.search-wrap{position:relative}
+.search-wrap input{padding:12px;width:270px;height:45px;border:1px solid #e1e1e1;font-size:15px}
+.search-wrap button{position:absolute;top:50%;right:10px;transform:translateY(-50%);border:none;background-color:transparent}
+.refresh-btn{display:flex;justify-content:center;align-items:center;width:45px;height:45px;border:1px solid #e1e1e1;background-color:transparent}
+
 /* 반응형 [s] */
 @media (max-width:1300px){
 #Board-write.board{max-width:95%}
