@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# 차량 장기렌트 / 리스 견적 신청 서비스
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 배포 URL
+https://portfolio01-zuj0.onrender.com/
 
-Currently, two official plugins are available:
+----------------------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 프로젝트 소개
 
-## React Compiler
+React TypeScript 기반으로 제작한 장기렌트 / 리스 차량을 신청 할 수 있는 서비스입니다.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+사용자는  
+간편 견적 신청 → 차량 선택 → 모델 및 옵션 선택 → 사용자 정보 입력 → 신청 완료  
+흐름으로 진행되며, 선택한 옵션에 따라 견적 금액이 실시간으로 변경되도록 구현했습니다.
 
-## Expanding the ESLint configuration
+----------------------
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 주요기능
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 사용자 기능
+- 차량 선택 및 모델 / 옵션 선택
+- 옵션 선택에 따른 실시간 견적 금액 계산
+- 간편 견적 신청 및 상담 신청 기능
+- 신청 완료 후 결과 확인
+  
+# 관리자 기능
+  # 1. 차량 관리
+  - 관리자 로그인
+  - 차량 등록 및 모델 / 옵션 추가
+  - 차량 목록 조회
+  - 차량 수정 및 삭제
+    
+  # 2. 상담 관리
+  - 간편 견적 신청 목록 조회
+  - 빠른 상담 신청 목록 조회
+  - 특판 차량 상담 신청 목록 조회
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+----------------------
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 기술 스택
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React (TypeScript)**  
+→ SPA 구조를 기반으로 상태 관리 및 동적 UI 구현  
+→ 옵션 변경에 따른 실시간 견적 계산 처리
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React Router**  
+→ 페이지 이동 시 새로고침 없이 자연스러운 사용자 경험 제공
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **JSON Server**  
+→ 실제 서비스 환경을 고려하여 데이터 CRUD 구현
+
+----------------------
+
+# 주의사항
+
+- 차량 이미지 업로드 시 `src` 폴더에 직접 추가해야 합니다.
+- 이미지 파일명은 반드시 `차량명_컬러명` 형식으로 작성해야 정상 출력됩니다.
+
+----------------------
+
+# 관리자 계정
+
+- ID: admin  
+- PW: 1234
+
+  ----------------------
+  
+  # 개선예정
+
+  - 목록 구간에서의 페이징 기능의 부재로 인한 페이징 기능 추가
+  - 목록 구간에서의 검색 기능 추가
+
+
